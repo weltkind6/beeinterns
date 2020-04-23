@@ -13,9 +13,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 17px;
-  max-width: 1443px;
-  width: 100%;
   outline: 1px solid #737270;
+}
+main {
+  max-width: 1440px;
 }
 a {
   text-decoration: none;
@@ -124,10 +125,16 @@ h1 {
   width: 970px;
   outline: 1px solid #737270;
 }
-
 .base {
   display: flex;
   justify-content: center;
+}
+.base_wrapper {
+}
+.base_wrapper_content {
+  padding: 50px 20px;
+  box-sizing: border-box;
+  outline: 1px solid red;
 }
 h2 {
   padding-bottom: 9px;
@@ -136,9 +143,6 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   padding-bottom: 9px;
-}
-.name_wrapper {
-  margin: 55px 15px 0 20px;
 }
 
 .input:first-child {
@@ -235,9 +239,7 @@ h6 {
   line-height: 25px;
   color: #878786;
 }
-.foot {
-  outline: none;
-}
+
 .last {
   padding-left: 50px;
 }
