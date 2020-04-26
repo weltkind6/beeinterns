@@ -5,187 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shooper</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <header>
-        <div class="logo">
-          <img src="img/logo.png" alt="" />
-        </div>
-        <form>
-          <input
-            name="s"
-            class="form"
-            placeholder="Search for products"
-            type="search"
-          />
-          <button type="submit" class="search_button">Search</button>
-        </form>
-        <div class="buttons">
-          <button class="btn">Log in</button>
-          <button class="btn">Sign up</button>
-        </div>
-        <div class="header_img">
-          <img src="img/2.png" alt="" />
-          <img src="img/3.png" alt="" />
+        <div class="header_wrapper">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <form>
+            <input
+              name="s"
+              class="form"
+              placeholder="Search for products"
+              type="search"
+            />
+            <button type="submit" class="search_button">Search</button>
+          </form>
+          <div class="buttons">
+            <button class="btn">Log in</button>
+            <button class="btn">Sign up</button>
+          </div>
+          <div class="header_img">
+            <a href="#"><img src="img/2.png" alt="" /></a>
+            <a href="#"> <img src="img/3.png" alt="" /></a>
+          </div>
         </div>
       </header>
 
       <div class="sub_header">
-        <nav>
-          <ul class="sub_menu">
-            <li><a href="#">Home decor</a></li>
-            <li><a href="#">Furniture</a></li>
-            <li><a href="#">Lighting</a></li>
-            <li><a href="#">Home Accens</a></li>
-            <li><a href="#">Rugs</a></li>
-            <li><a href="#">Outdoors</a></li>
-            <li><a href="#">Holidays</a></li>
-            <li><a href="#">Gifts</a></li>
-            <li><a href="#">Events</a></li>
-          </ul>
-        </nav>
+        <div class="sub_header_wrapper">
+          <nav>
+            <ul class="sub_menu">
+              <li><a href="#">Home decor</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Lighting</a></li>
+              <li><a href="#">Home Accens</a></li>
+              <li><a href="#">Rugs</a></li>
+              <li><a href="#">Outdoors</a></li>
+              <li><a href="#">Holidays</a></li>
+              <li><a href="#">Gifts</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <div class="application">
         <h1>Seller Application</h1>
-
+  
         <div class="menu_application">
           <nav>
             <ul class="sub_menu_application">
-              <li><a href="#">Application Critaria</a></li>
-              <li><a href="#">Company Profile</a></li>
-              <li><a href="#">Web & Social Media</a></li>
-              <li><a href="#">Contact info</a></li>
-              <li><a href="#">Confirm + Account</a></li>
+              <li><a href="">Application Critaria</a></li>
+              <li><a href="">Company Profile</a></li>
+              <li><a href="">Web & Social Media</a></li>
+              <li><a href="">Contact info</a></li>
+              <li><a href="">Confirm + Account</a></li>
             </ul>
           </nav>
         </div>
 
-        <section class="base">
-          <div class="base_wrapper">
-            <div class="base_wrapper_content">
-              <div class="name_wrapper">
-                <h3>Name</h3>
-                <div class="name namer">
-                  <input type="name" placeholder="Mr." class="input" />
-                  <input type="name" placeholder="First name" class="input" />
-                  <input type="name" placeholder="Middle name" class="input" />
-                  <input type="name" placeholder="Last name" class="input" />
+          <!----------------------------------base block-------------------------------------------->
+
+          <section class="base">
+            <div class="base_block_wrapper">
+              <div class="base_name">
+                <div class="under_title"><span>Name</span></div>
+                <div class="name_form">
+                  <input type="name" placeholder="Mr." class="base_input" />
+                  <input
+                    type="name"
+                    placeholder="First name"
+                    class="base_input"
+                  />
+                  <input
+                    type="name"
+                    placeholder="Middle name"
+                    class="base_input"
+                  />
+                  <input
+                    type="name"
+                    placeholder="Last name"
+                    class="base_input"
+                  />
                 </div>
               </div>
 
-              <div class="title_wrapper">
-                <div class="name title">
-                  <h3>Title</h3>
+              <div class="base_title">
+                <div class="under_title"><span>Title</span></div>
+                <div class="title_form">
                   <input
                     type="name"
                     placeholder="Ownded, Manager, Designer, Merchandiser, CEO."
+                    class="input"
                   />
                 </div>
               </div>
 
               <div class="business">
-                <h5>Business Mailing Address</h5>
-                <div class="business_wrapper">
-                  <div class="business_block">
-                    <h4>Street adress</h4>
-                    <input type="name" class="b_input" />
-                  </div>
-                  <div class="business_block">
-                    <h4>Apt / Street / Other</h4>
-                    <input type="name" class="b_input" />
-                  </div>
-                  <div class="business_block">
-                    <h4>City</h4>
-                    <input type="name" class="b_input" />
-                  </div>
-                </div>
-                <div class="business_wrapper">
-                  <div class="business_block">
-                    <h4>Zip / Postal code</h4>
-                    <input type="name" class="b_input" />
-                  </div>
-                  <div class="business_block">
-                    <h4>Country</h4>
-                    <input
-                      type="name"
-                      class="b_input"
-                      placeholder="Select your country"
-                    />
-                  </div>
-                  <div class="business_block">
-                    <h4>Phone Number</h4>
-                    <input type="name" class="b_input" />
-                    <p>
-                      To validate your acconut please enter your valid phone
-                      number to recive comfirmation code
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <h3>Business Mailing Address</h3>
+                <div class="under_border"></div>
+                <div class="base_forms_wrapper">
+                  <div class="business_form_wrap">
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
 
-              <div class="business">
-                <div class="business_items">
-                  <div class="base">
-                    <button class="btn">Go Back</button>
-                    <p>By submiting this application your agree to the</p>
-                    <button class="submit">Submit Application</button>
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!--Для нижних трех-->
+                  <div class="business_form_wrap">
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form_wrapper">
+                      <div class=""><span class="">Name</span></div>
+                      <div class="business_form">
+                        <input
+                          type="name"
+                          placeholder="Last name"
+                          class="input"
+                        />
+                      </div>
+                      <div class="validate_text">
+                        <p>
+                          To Validate your account please enter valid mobile
+                          Number to receive confirmation code
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="base_footer">
+                  <div class="business_items">
+                    <div class="base_forms_items">
+                      <button class="btn">Go Back</button>
+                      <p>By submiting this application your agree to the</p>
+                      <button class="submit_button">Submit Application</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <footer>
-          <div class="base_wrapper foot">
-            <div class="footer_wrapper">
-              <div class="footer_menu_block">
-                <h3>How we help</h3>
-                <ul class="footer_text">
-                  <li><a href="">Application Critaria</a></li>
-                  <li><a href="">Company Profile</a></li>
-                  <li><a href="">Web & Social Media</a></li>
-                  <li><a href="">Contact info</a></li>
-                  <li><a href="">Confirm + Account</a></li>
-                </ul>
-              </div>
+          <!--end base block-->
 
-              <div class="footer_menu_block">
-                <h3>Get to Know Us</h3>
-                <ul class="footer_text">
-                  <li><a href="">Retailers</a></li>
-                  <li><a href="">Interlors Designer</a></li>
-                  <li><a href="">Product Designer</a></li>
-                  <li><a href="">Wholesalers / Importers</a></li>
-                  <li><a href="">Artisans</a></li>
-                </ul>
-              </div>
+          <footer>
+            <div class="base_wrapper_foot">
+              <div class="footer_wrapper">
 
-              <div class="footer_menu_block">
-                <h3>Join the Community</h3>
-                <ul class="footer_text">
-                  <li><a href="">Upcoming Events</a></li>
-                  <li><a href="">Become a Buyer</a></li>
-                  <li><a href="">Become a Seller</a></li>
-                </ul>
-              </div>
-
-              <div class="footer_menu_block last">
-                <h3>Follow Us</h3>
-                <ul class="footer_text">
-                  <li><a href="">Facebook</a></li>
-                  <li><a href="">Pinterest</a></li>
-                  <li><a href="">Twitter</a></li>
-                  <li><a href="">Instagram</a></li>
-                </ul>
+                <div class="footer_menu_block">
+                  <div class="footer_title">
+                    <h3>How we help</h3>
+                  </div>
+                
+                  <ul class="footer_text">
+                    <li><a href="">Application Critaria</a></li>
+                    <li><a href="">Company Profile</a></li>
+                    <li><a href="">Web & Social Media</a></li>
+                    <li><a href="">Contact info</a></li>
+                    <li><a href="">Confirm + Account</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer_menu_block">
+                  <h3>Get to Know Us</h3>
+                  <ul class="footer_text">
+                    <li><a href="">Retailers</a></li>
+                    <li><a href="">Interlors Designer</a></li>
+                    <li><a href="">Product Designer</a></li>
+                    <li><a href="">Wholesalers / Importers</a></li>
+                    <li><a href="">Artisans</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer_menu_block">
+                  <h3>Join the Community</h3>
+                  <ul class="footer_text">
+                    <li><a href="">Upcoming Events</a></li>
+                    <li><a href="">Become a Buyer</a></li>
+                    <li><a href="">Become a Seller</a></li>
+                  </ul>
+                </div>
+    
+                <div class="footer_menu_block last">
+                  <h3>Follow Us</h3>
+                  <ul class="footer_text">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Pinterest</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
-        <h6>Terms & Conditions Privacy</h6>
-      </div>
+          </footer>
+          <span class="terms"><a href="#">Terms & Conditions Privacy</a></span>
+        </div>
+      </form>
     </main>
   </body>
 </html>
