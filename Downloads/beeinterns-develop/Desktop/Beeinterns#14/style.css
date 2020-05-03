@@ -30,16 +30,18 @@ span {
   cursor: pointer;
   border: 0 solid #000;
   margin-right: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.65);
 }
 h2 {
   cursor: pointer;
 }
-.img {
-  display: flex;
-  justify-content: center;
+img {
   width: 100%;
-  max-width: 510px;
-  height: 700px;
+  min-width: 250px;
+  max-width: 500px;
+  height: auto;
 }
 label {
   display: flex;
@@ -50,6 +52,7 @@ h1 {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+  text-align: center;
 }
 h2 {
   font-size: 13px;
