@@ -26,14 +26,6 @@ main {
   background: #fff;
 }
 
-span {
-  cursor: pointer;
-  border: 0 solid #000;
-  margin-right: 15px;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: rgba(0, 0, 0, 0.65);
-}
 h2 {
   cursor: pointer;
 }
@@ -57,25 +49,37 @@ h1 {
 h2 {
   font-size: 13px;
   line-height: 15px;
+  margin-left: 15px;
 }
+
+.element::before {
+  content: ">";
+  cursor: pointer;
+  border: 0 solid #000;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.65);
+  width: 15px;
+}
+
 input {
   display: none;
 }
 #rad1:checked ~ .desteny_content {
   display: block;
 }
-#rad1:checked ~ label > span {
+#rad1:checked ~ label > .element {
   transform: rotate(90deg);
 }
-#rad2:checked ~ .second {
+#rad2:checked ~ .desteny_content {
   display: block;
 }
-#rad2:checked ~ label > span {
+#rad2:checked ~ label > .element {
   transform: rotate(90deg);
 }
-#rad3:checked ~ .third {
+#rad3:checked ~ .desteny_content {
   display: block;
 }
-#rad3:checked ~ label > span {
+#rad3:checked ~ label > .element {
   transform: rotate(90deg);
 }
