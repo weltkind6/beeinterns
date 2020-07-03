@@ -1,0 +1,24 @@
+.contaienr {
+  position: relative;
+}
+.row {
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+.block + .block {
+  margin-left: 50px;
+}
+.pw {
+  position: absolute;
+  transform: translate(-30%, -30%);
+  left: 50%;
+  top: 30%;
+}

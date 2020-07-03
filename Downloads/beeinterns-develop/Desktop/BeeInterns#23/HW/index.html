@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src=""></script>
+  </head>
+  <body>
+    <div class="contaiener">
+      <div class="pw">
+        <progress value="10" max="100"></progress>
+        <button>Your progress in JS</button>
+      </div>
+
+      <div class="row">
+        <div class="block one">One</div>
+        <div class="block two">Two</div>
+        <div class="block three">Three</div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".one").onclick = function (event) {
+        console.log("click to one");
+        console.log(event);
+        event.target.style.backgroundColor = "red";
+        alert("Click on block 1");
+      };
+
+      document.querySelector(".two").onmouseenter = function () {
+        document.querySelector(".two").style.background = "lightblue";
+      };
+      document.querySelector(".two").onmouseleave = function () {
+        document.querySelector(".two").style.background = "coral";
+      };
+      document.querySelector(".two").onmousedown = function () {
+        document.querySelector(".two").style.background = "lime";
+        document.querySelector(".two").style.width = w + "px";
+        w++;
+      };
+      document.querySelector(".two").onmouseup = function () {
+        document.querySelector(".two").style.background = "#f52f52";
+        document.querySelector(".two").style.height = h + "px";
+        h++;
+      };
+
+      document.querySelector(".two").oncontextmenu = function () {
+        console.log("right mouse button, bro");
+      };
+      let w = 200;
+      let h = 200;
+      document.querySelector(".three").onmousemove = () => {
+        document.querySelector(".three").style.width = w + "px";
+        document.querySelector(".three").style.height = h + "px";
+        w++;
+        h++;
+      };
+      let p = 10;
+
+      document.querySelector("button").onclick = () => {
+        p++;
+        document.querySelector("progress").value = p;
+        console.log(p);
+      };
+    </script>
+  </body>
+</html>
